@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - /bin/cp -R /home/aktivbal/aktivbalaton-weather-widget/includes /home/aktivbal/public_html/wp-content/plugins/aktivbalaton-weather-widget/
+    - /bin/cp -R /home/aktivbal/aktivbalaton-weather-widget/assets /home/aktivbal/public_html/wp-content/plugins/aktivbalaton-weather-widget/
+    - /bin/cp -R /home/aktivbal/aktivbalaton-weather-widget/icons /home/aktivbal/public_html/wp-content/plugins/aktivbalaton-weather-widget/
+    - /bin/cp /home/aktivbal/aktivbalaton-weather-widget/aktivbalaton-weather-widget.php /home/aktivbal/public_html/wp-content/plugins/aktivbalaton-weather-widget/
+    - find /home/aktivbal/public_html/wp-content/plugins/aktivbalaton-weather-widget -type d -exec chmod 755 {} \;
+    - find /home/aktivbal/public_html/wp-content/plugins/aktivbalaton-weather-widget -type f -exec chmod 644 {} \;
